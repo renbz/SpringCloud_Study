@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ren</groupId>
+    <artifactId>Kuang_study_springcloud</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>R01_Springcloud-API</module>
+        <module>R02_Springcloud-Provider-Dept-8001</module>
+        <module>R02_Springcloud-Provider-Dept-8002</module>
+        <module>R02_Springcloud-Provider-Dept-8003</module>
+        <module>R03_Springcloud-Consumer-Dept-80</module>
+        <module>R04_Springcloud-Eureka-7001</module>
+        <module>R04_Springcloud-Eureka-7002</module>
+        <module>R04_Springcloud-Eureka-7003</module>
+        <module>R03_Springcloud-Consumer-Feign-80</module>
+        <module>R02_Springcloud-Provider-Dept-Hystrix-8001</module>
+        <module>R03_Springcloud-Consumer-Hystrix-Dashboard-9001</module>
+        <module>R05_Springcloud-Zuul-9527</module>
+        <module>R06_Springcloud-Config-1-Server-3344</module>
+        <module>R06_Springcloud-Config-2-Client-3355</module>
+    </modules>
+
+    <!--打包方式 pom-->
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <junit.version>4.13</junit.version>
+        <lombok.version>1.18.18</lombok.version>
+        <log4j.version>1.2.17</log4j.version>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Hoxton.SR10</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--springboot依赖-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.3.4.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--数据库-->
+            <!--导入mysql包 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.6</version>
+                <scope>runtime</scope>
+            </dependency>
+            <!--druid-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.1.10</version>
+            </dependency>
+            <!--springboot 启动器-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>2.1.4</version>
+            </dependency>
+            <!--日志测试~-->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+        </dependencies>
+
+
+    </dependencyManagement>
+
+
+</project>
