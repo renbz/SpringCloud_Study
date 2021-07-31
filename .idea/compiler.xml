@@ -14,7 +14,7 @@
         <module name="R06_Springcloud-Config-Client-3355" />
         <module name="R02_Springcloud-Provider-Dept-8001" />
         <module name="R02_Springcloud-Provider-Dept-Hystrix-8001" />
-        <module name="R06_Springcloud-Config-Server-3344" />
+        <module name="R06_Springcloud-Config-Server-3333" />
         <module name="R02_Springcloud-Provider-Dept-8003" />
         <module name="R03_Springcloud-Consumer-Feign-80" />
         <module name="R02_Springcloud-Provider-Dept-8002" />
@@ -29,6 +29,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="R04_Springcloud-Eureka-7001-1" target="1.8" />
+      <module name="R06_Springcloud-Config-Server-3344" target="1.8" />
+      <module name="R06_Springcloud-Config-Server-3344-bac" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

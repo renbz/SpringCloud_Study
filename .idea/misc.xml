@@ -7,11 +7,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/R03_Springcloud-Consumer-Dept-80/pom.xml" />
         <option value="$PROJECT_DIR$/R04_Springcloud-Eureka-7001/pom.xml" />
+        <option value="$PROJECT_DIR$/R06_Springcloud-Config-Client-3355/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/R04_Springcloud-Eureka-7001-1/pom.xml" />
+        <option value="$PROJECT_DIR$/R06_Springcloud-Config-Server-3344-bac/pom.xml" />
       </set>
     </option>
   </component>

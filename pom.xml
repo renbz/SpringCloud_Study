@@ -20,8 +20,9 @@
         <module>R02_Springcloud-Provider-Dept-Hystrix-8001</module>
         <module>R03_Springcloud-Consumer-Hystrix-Dashboard-9001</module>
         <module>R05_Springcloud-Zuul-9527</module>
-        <module>R06_Springcloud-Config-1-Server-3344</module>
-        <module>R06_Springcloud-Config-2-Client-3355</module>
+        <module>R06_Springcloud-Config-Client-3355</module>
+        <module>R06_Springcloud-Config-Server-3344</module>
+        <module>R06_Springcloud-Config-Server-3333</module>
     </modules>
 
     <!--打包方式 pom-->
